@@ -5,8 +5,7 @@ import whatsAppIcon from './../assets/whatsapp-icon.svg'
 
 const LeftSidebar = () => {
   return (
-    <div className="w-[99px] h-[880px] flex flex-col justify-between absolute items-center text-[14px] pt-[33px] font-face-pt-regular border-[#E7E5E4] border-r-[1px]
-    ">
+    <div className="left-sidebar w-[99px] flex flex-col justify-between absolute items-center text-[14px] pt-[33px] font-face-pt-regular border-[#E7E5E4] border-r-[1px]">
         <div className="flex flex-col justify-center items-center mb-[20px]">
             <img src={languageIcon} alt="language-icon" />
             <div className="mt-[10px]">

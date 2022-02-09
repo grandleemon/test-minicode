@@ -1,3 +1,50 @@
 .font-face-pt-regular{
   font-family: "PT-Root-Regular";
 }
+
+.container{
+  margin: 0 auto;
+}
+
+.insurance{
+  background: linear-gradient(85.58deg, #A40731 -0.38%, #830B3A 41.27%, #002359 103.58%);
+}
+
+main{
+  background-color: #F9F9F9;
+  height: calc(100vh - 100px);
+}
+
+.left-sidebar{
+  height: calc(100vh - 100px);
+}
+
+.plus{
+  position: relative;
+}
+
+.plus:before,
+.plus:after {
+  content: "";
+  position:absolute;
+  background:#A40731
+}
+
+.plus::before {
+  height: 19px;
+  right:31px;
+  top: 50%; /* this defines how much black "border" there should be */
+  width:2px;
+  transform:translateY(-46%);
+}
+
+/* the horizontal line */
+.plus::after {
+  width: 19px;
+  top:50%;
+  right: 5%;
+  height:2px;
+  transform: translateX(50%);
+}
+
+
