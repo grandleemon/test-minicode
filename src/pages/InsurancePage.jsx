@@ -67,7 +67,31 @@ const InsurancePage = () => {
         }
     ]
 
-    
+    let [currentActive, setCurrentActive] = useState(0) 
+
+    const stepProgressBar = [
+        {
+            'value': 1
+        },
+        {
+            'value': 2
+        },
+        {
+            'value': 3
+        }
+    ]
+
+    const nextStep = () => {
+        if(currentActive > 2) return;
+        setCurrentActive(currentActive + 1)
+        console.log(currentActive)
+    }
+
+    const prevStep = () => {
+        if(currentActive < 1) return;
+        setCurrentActive(currentActive - 1)
+        console.log(currentActive)
+    }
 
   return (
     <div className="font-face-pt-regular">
@@ -101,17 +125,6 @@ const InsurancePage = () => {
                     </div>
 
                     <div className="w-[100%] select-none mt-[-20px]">
-                        {/* <Collapsible title="Obiectul asigurării">
-                            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. <br /> <br />
-                            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. <br /> <br />
-                            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere. <br /> <br />
-                            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.
-                            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. 
-                            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.
-                        </Collapsible>
-                        <Collapsible title="Riscuri și obligațiuni" second>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!
-                        </Collapsible> */}
                         {collapseInfo.map((card, index) => {
                             const showDescription = index === activeIndex ? "collapse-content-active" : "";
                             const changeIcon = index === activeIndex ? "plus-active" : "";
@@ -127,22 +140,22 @@ const InsurancePage = () => {
                     </div>
                 </div>
                 <div className="w-[50%] flex justify-between text-[18px] items-center mt-[45px]">
-                    <button className="px-[30px] py-[9px] bg-white border-[1px] border-[#A40731] font-[700] rounded-[7px] w-[145px] flex items-center justify-center">
+                    <button className={`px-[30px] py-[9px] bg-white border-[1px] border-[#A40731] font-[700] rounded-[7px] w-[145px] flex items-center justify-center disabled:opacity-50`}
+                    onClick={prevStep} disabled={currentActive < 1 ? true : false}>
                         <span className="font-[400] mr-[12px]">&#8592;</span> 
                         Înapoi
                     </button>
-                    <button className="text-white px-[30px] py-[9px] bg-[#A40731] border-[1px] border-[#A40731] font-[700] rounded-[7px] w-[145px] flex items-center justify-center">
+                    <button className={`text-white px-[30px] py-[9px] bg-[#A40731] border-[1px] border-[#A40731] font-[700] rounded-[7px] w-[145px] flex items-center justify-center disabled:opacity-50`} disabled={currentActive > 2 ? true : false} onClick={nextStep}>
                         Înainte
                         <span className="font-[400] ml-[12px]">&#8594;</span> 
                     </button>
                 </div>  
             </div>
             <div className="right-sidebar absolute right-0 top-[100px] border-l-[1px] w-[100px] flex flex-col justify-between items-center py-[40px] select-none">
-
-                <div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
+                {<div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
                     <div className="w-[11px] h-[11px] rounded-full bg-[#00834B]"></div>
                 </div>
-
+                /*
                 <hr className="h-[180px] border-[1px] border-[#00834B]"/>
 
                 <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
@@ -159,7 +172,16 @@ const InsurancePage = () => {
 
                 <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
                     <span className="font-[700]">3</span>
-                </div>
+                </div> */}
+
+                {stepProgressBar.map((circle) => {
+                    return (
+                        <div className={`step-circle w-[35px] h-[35px] border-[2px] rounded-full flex items-center justify-center 
+                        ${currentActive >= circle.value ? "completed-step border-[#00834B]" : ""} `}>
+                            <span className="font-[700]">{ currentActive >= circle.value ? <span className="text-white">&#10003;</span> : circle.value}</span>
+                        </div> 
+                    )
+                })}
             </div>
         </div>
     </div>
