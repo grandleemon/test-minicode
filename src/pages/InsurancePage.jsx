@@ -85,7 +85,6 @@ const InsurancePage = () => {
                             <div className="flex items-center w-[20px] h-[20px]">
                             </div>
                         </div>
-                        
                     </div>
                 </div>
                 <div className="w-[50%] flex justify-between text-[18px] items-center mt-[45px]">
@@ -97,6 +96,30 @@ const InsurancePage = () => {
                         Înainte
                         <span className="font-[400] ml-[12px]">&#8594;</span> 
                     </button>
+                </div>  
+            </div>
+            <div className="right-sidebar absolute right-0 top-[100px] border-l-[1px] w-[100px] flex flex-col justify-between items-center py-[40px] select-none">
+
+                <div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
+                    <div className="w-[11px] h-[11px] rounded-full bg-[#00834B]"></div>
+                </div>
+
+                <hr className="h-[170px] border-[1px] border-[#00834B]"/>
+
+                <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
+                    <span className="font-[700]">1</span>
+                </div>
+
+                <hr className="h-[170px] border-[1px] border-[#E7E5E4]"/>
+
+                <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
+                    <span className="font-[700]">2</span>
+                </div>
+
+                <hr className="h-[170px] border-[1px] border-[#E7E5E4]"/>
+
+                <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
+                    <span className="font-[700]">3</span>
                 </div>
             </div>
         </div>

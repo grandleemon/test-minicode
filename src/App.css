@@ -15,7 +15,7 @@ main{
   height: calc(100vh - 100px);
 }
 
-.left-sidebar{
+.left-sidebar, .right-sidebar{
   height: calc(100vh - 100px);
 }
 
