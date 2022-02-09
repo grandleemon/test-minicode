@@ -93,5 +93,15 @@ main{
   border-color:#42403F;
 }
 
+.active-tab{
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-tab{
+  background: linear-gradient(85.58deg, #A40731 -0.38%, #830B3A 41.27%, #002359 103.58%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 

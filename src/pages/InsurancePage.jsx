@@ -5,6 +5,11 @@ import car from './../assets/car.svg'
 const InsurancePage = () => {
 
     const [activeIndex, setActiveIndex] = useState(0)
+    const [activeTab, setActiveTab] = useState(0)
+
+    const handleTab = (arg) => {
+        setActiveTab(arg)
+    }
     
     const typesOfInsurance = [
         'Carte verde',
@@ -18,7 +23,6 @@ const InsurancePage = () => {
 
     const insuranceInfo = [
         {
-            'image': './../assets/car.svg',
             'info': 'Autoturism cu pînă la 9 locuri'
         },
         {
@@ -102,8 +106,9 @@ const InsurancePage = () => {
                 </h2>
                 <div className="flex gap-x-[28px] mt-[18px]">
                     {typesOfInsurance.map((type, i) => (
-                        <div key={i} className="px-[30px] py-[9px] bg-white rounded-[7px] cursor-pointer border-[1px] border-[#E7E5E4]">
-                            <span className="text-[18px]">{type}</span>
+                        <div onClick={() => handleTab(i)} key={i} className={`px-[30px] py-[9px] bg-white rounded-[7px] cursor-pointer border-[1px] border-[#E7E5E4] 
+                        ${activeTab == i ? "active-tab" : ""}` }>
+                            <span className={`text-[18px] ${activeTab == i ? "gradient-tab font-[800] font-['Raleway']" : ""}`} >{type}</span>
                         </div>
                     ))}
                     <span className="px-[20px] py-[9px] cursor-pointer text-white hover:underline text-[18px] font-[700] ">Altele <span className="ml-[5px]">&rarr;</span></span>
