@@ -19,15 +19,18 @@ main{
   height: calc(100vh - 100px);
 }
 
-.plus{
+.plus, .plus-active{
   position: relative;
 }
 
 .plus:before,
-.plus:after {
+.plus:after,
+.plus-active::before,
+.plus-active::after {
   content: "";
   position:absolute;
-  background:#A40731
+  background:#A40731;
+  transition: ease-in-out 0.2s;
 }
 
 .plus::before {
@@ -45,6 +48,36 @@ main{
   right: 5%;
   height:2px;
   transform: translateX(50%);
+}
+
+.plus-active::after{
+  width: 19px;
+  top: 52%;
+  right: 4%;
+  transform: rotate(45deg);
+  transition: ease-in-out 0.2s;
+}
+
+.plus-active::before{
+  top: 35%;
+  right: 34px;
+  transform:rotate(45deg);
+  transition: ease-in-out 0.2s;
+}
+
+.collapse-content{
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: ease-in-out 0.2s;
+}
+
+.collapse-content-active{
+  opacity: 1;
+  height: 307px;
+  padding: 20px 0;
+  border-top: 1px solid #a407311a;
+  transition: ease-in-out 0.2s;
 }
 
 

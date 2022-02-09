@@ -1,7 +1,11 @@
+import { useState } from 'react'
+import {AccordionItem} from '../components/Collapsible'
 import car from './../assets/car.svg'
 
 const InsurancePage = () => {
 
+    const [activeIndex, setActiveIndex] = useState(0)
+    
     const typesOfInsurance = [
         'Carte verde',
         'RCA',
@@ -43,6 +47,28 @@ const InsurancePage = () => {
         },
     ]
 
+    const collapseInfo = [
+        {
+            'title': 'Obiectul asigurării',
+            'description': `Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. 
+            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. 
+            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.
+            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.
+            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. 
+            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului conform listei de dotări ale uzinei producătoare. 
+            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.
+            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.
+            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. 
+            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.`
+        },
+        {
+            'title': 'Riscuri și obligațiuni',
+            'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!'
+        }
+    ]
+
+    
+
   return (
     <div className="font-face-pt-regular">
         <div className="min-w-[1300px] min-h-[767px]">
@@ -52,11 +78,11 @@ const InsurancePage = () => {
                 </h2>
                 <div className="flex gap-x-[28px] mt-[18px]">
                     {typesOfInsurance.map((type, i) => (
-                        <div key={i} className="px-[30px] py-[9px] bg-white rounded-[7px] cursor-pointer">
+                        <div key={i} className="px-[30px] py-[9px] bg-white rounded-[7px] cursor-pointer border-[1px] border-[#E7E5E4]">
                             <span className="text-[18px]">{type}</span>
                         </div>
                     ))}
-                    <span className="px-[20px] py-[9px] cursor-pointer text-white hover:underline text-[18px] font-[700]">Altele &rarr;</span>
+                    <span className="px-[20px] py-[9px] cursor-pointer text-white hover:underline text-[18px] font-[700] ">Altele <span className="ml-[5px]">&rarr;</span></span>
                 </div>
             </div>
             <div className="mt-[30px]">
@@ -74,17 +100,30 @@ const InsurancePage = () => {
                         ))}
                     </div>
 
-                    <div className="w-[100%]">
-                        <div className="plus w-[100%] bg-white rounded-[7px] px-[20px] py-[11px] cursor-pointer flex justify-between items-center">
-                            <h3 className="font-[700] text-[#42403F] text-[18px]">Obiectul asigurarii</h3>
-                            <div className="flex items-center w-[20px] h-[20px]">
-                            </div>
-                        </div>
-                        <div className="plus w-[100%] bg-white rounded-[7px] px-[20px] py-[11px] cursor-pointer flex justify-between items-center mt-[20px]">
-                            <h3 className="font-[700] text-[#42403F] text-[18px]">Riscuri și obligațiuni</h3>
-                            <div className="flex items-center w-[20px] h-[20px]">
-                            </div>
-                        </div>
+                    <div className="w-[100%] select-none mt-[-20px]">
+                        {/* <Collapsible title="Obiectul asigurării">
+                            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. <br /> <br />
+                            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. <br /> <br />
+                            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere. <br /> <br />
+                            Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.
+                            Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. 
+                            Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.
+                        </Collapsible>
+                        <Collapsible title="Riscuri și obligațiuni" second>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!
+                        </Collapsible> */}
+                        {collapseInfo.map((card, index) => {
+                            const showDescription = index === activeIndex ? "collapse-content-active" : "";
+                            const changeIcon = index === activeIndex ? "plus-active" : "";
+                            return (
+                            <AccordionItem 
+                            title={card.title} 
+                            second 
+                            description={card.description} 
+                            showDescription={showDescription} 
+                            changeIcon={changeIcon}
+                            setActiveIndex={() => setActiveIndex(index)} />)
+                        })}
                     </div>
                 </div>
                 <div className="w-[50%] flex justify-between text-[18px] items-center mt-[45px]">
@@ -104,19 +143,19 @@ const InsurancePage = () => {
                     <div className="w-[11px] h-[11px] rounded-full bg-[#00834B]"></div>
                 </div>
 
-                <hr className="h-[170px] border-[1px] border-[#00834B]"/>
+                <hr className="h-[180px] border-[1px] border-[#00834B]"/>
 
                 <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
                     <span className="font-[700]">1</span>
                 </div>
 
-                <hr className="h-[170px] border-[1px] border-[#E7E5E4]"/>
+                <hr className="h-[180px] border-[1px] border-[#E7E5E4]"/>
 
                 <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
                     <span className="font-[700]">2</span>
                 </div>
 
-                <hr className="h-[170px] border-[1px] border-[#E7E5E4]"/>
+                <hr className="h-[180px] border-[1px] border-[#E7E5E4]"/>
 
                 <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
                     <span className="font-[700]">3</span>
