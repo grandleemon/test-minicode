@@ -2,6 +2,10 @@
   font-family: "PT-Root-Regular";
 }
 
+.font-face-pt-bold{
+  font-family: "PT-Root-Bold";
+}
+
 .container{
   margin: 0 auto;
 }
@@ -103,5 +107,41 @@ main{
   -webkit-text-fill-color: transparent;
 }
 
+.card-item{
+  transform: translateY(0);
+  transition: ease 0.2s;
+}
+
+.card-item-active{
+  transform: translateY(-10px);
+  transition: ease 0.2s;
+}
+
+.logo-item-active{
+  background-color: #ff0044;
+  -webkit-mask: url("./assets/car.svg") no-repeat center;
+  mask: url("./assets/car.svg") no-repeat center;
+}
+
+.active-block{
+  opacity: 1;
+  transition: opacity 1.2s;
+  
+}
+
+.hidden-block{
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -9999;
+  opacity: 0.1;
+  transition: opacity 2s;
+}
+
+.first-step{
+  
+}
 
 

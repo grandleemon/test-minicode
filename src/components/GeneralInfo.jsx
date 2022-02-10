@@ -10,13 +10,11 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
     const nextStep = () => {
         if(currentActive > 2) return;
         setCurrentActive(currentActive + 1)
-        console.log(currentActive)
     }
 
     const prevStep = () => {
         if(currentActive < 1) return;
         setCurrentActive(currentActive - 1)
-        console.log(currentActive)
     }
 
   return (
@@ -25,10 +23,12 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
             <div className="mt-[40px] grid grid-cols-2 gap-x-[20px]">
                 <div className="grid grid-cols-3 grid-rows-3 gap-[20px] select-none">
                     {cards?.map((card, i) => (
-                        <div key={i} className={`border-[1px] w-[200px] min-h-[125px] px-[20px] py-[13px] bg-white rounded-[7px] flex flex-col items-center justify-center 
-                        text-center shadow-[0_5px_15px_2px_rgba(0,0,0,0.05)] cursor-pointer ${activeCard === i ? "border-[#A40731] font-[700]" : ""}`}
+                        <div key={i} className={`card-item border-[1px] w-[200px] min-h-[125px] px-[20px] py-[13px] bg-white rounded-[7px] flex flex-col items-center justify-center 
+                        text-center shadow-[0_5px_15px_2px_rgba(0,0,0,0.05)] hover:bg-[#a4073109] cursor-pointer ${activeCard === i ? "border-[#A40731] font-[700] card-item-active" : ""}`}
                         onClick={() => setActiveCard(i)}>
-                            <img src={car} alt="card-image" className="mt-[17px] stroke-[#A40731]" />
+                            <div className={`${activeCard === i ? "logo-item-active" : ""} mt-[17px]`}>
+                                <img src={car} alt="card-image" className="" />
+                            </div>
                             <span className="mt-[17px]">{card.info}</span>
                         </div>
                     ))}
@@ -63,40 +63,36 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
                         </button>
                     </div>  
                 </div>
-                <div className="right-sidebar absolute right-0 top-[100px] border-l-[1px] w-[100px] flex flex-col justify-between items-center py-[40px] select-none">
-                    <div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
+
+                <div className="right-sidebar absolute right-0 top-[100px] border-l-[1px] w-[100px] flex flex-col items-center py-[40px] select-none">
+                    {/* <div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
                         <div className="w-[11px] h-[11px] rounded-full bg-[#00834B]"></div>
-                    </div>
-                    
-                    <hr className="h-[180px] border-[1px] border-[#00834B]"/>
-                    {/*
-                    <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
-                        <span className="font-[700]">1</span>
-                    </div>
-
-                    <hr className="h-[180px] border-[1px] border-[#E7E5E4]"/>
-
-                    <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
-                        <span className="font-[700]">2</span>
-                    </div>
-
-                    <hr className="h-[180px] border-[1px] border-[#E7E5E4]"/>
-
-                    <div className="w-[35px] h-[35px] border-[2px] border-[#42403F] rounded-full flex items-center justify-center">
-                        <span className="font-[700]">3</span>
                     </div> */}
+                    
+                    {/* <hr className="h-[210px] border-[1px] border-[#00834B]"/> */}
 
                     {progressBar.map((circle, i) => {
                         return (
                             <div className="flex flex-col items-center">
                                 <div className={`step-circle w-[35px] h-[35px] border-[2px] rounded-full flex items-center justify-center 
-                                    ${currentActive >= circle.value ? "completed-step border-[#00834B]" : ""} `}>
-                                    <span className="font-[700]">{ currentActive >= circle.value ? <span className="text-white">&#10003;</span> : circle.value}</span>
+                                    ${currentActive >= circle.value && circle.value !== 0 ? "completed-step border-[#00834B]" : ""} 
+                                    ${circle.value === 0 && "border-[#00834B]"}`}>
+                                        {circle.value === 0 
+                                        ? <div className={`w-[11px] h-[11px] rounded-full bg-[#00834B]`}></div> 
+                                        : "" }
+                                    <span className="font-[700]">
+                                        {currentActive >= circle.value 
+                                        ? <span className={`text-white ${circle.value === 0 && "hidden"}`}>&#10003;</span> 
+                                        : circle.value}
+                                    </span>
                                 </div> 
-                                {i + 1 < progressBar.length ? <hr className=" h-[180px] border-[1px] border-[#E7E5E4]"/> : ""}
+                                {i + 1 < progressBar.length 
+                                ? <hr className={`h-[210px] border-[1px] ${currentActive > circle.value 
+                                    ? "border-[#00834B]" 
+                                    : "border-[#E7E5E4]"}`}/> 
+                                : ""}
                             </div>
-                            
-                        )
+                            )
                     })}
                 </div>
             </div>
