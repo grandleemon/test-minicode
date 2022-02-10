@@ -76,6 +76,20 @@ main{
   transition: ease-in-out 0.4s;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #948e8c; 
+  border-radius: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #E7E5E4;
+}  
+
 .collapse-content-active{
   opacity: 1;
   height: 307px;
@@ -139,6 +153,7 @@ main{
   opacity: 0.1;
   transition: opacity 2s;
 }
+
 
 
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import InsuranceType from '../components/InsuranceTypes'
 import GeneralInfo from './../components/GeneralInfo'
 
@@ -478,7 +478,7 @@ const InsurancePage = () => {
             {generalInsuranceInfo.map((info, i) => {
                 return (
                     <div className={`${activeTab === i ? "active-block": "hidden-block"}`}>
-                        <GeneralInfo activeTitle={activeTitleTab} cards={info.cards} accordion={info.accordion} progressBar={info.stepProgress}/>
+                        <GeneralInfo key={i} activeTitle={activeTitleTab} cards={info.cards} accordion={info.accordion} progressBar={info.stepProgress}/>
                     </div>
                 )
             })}

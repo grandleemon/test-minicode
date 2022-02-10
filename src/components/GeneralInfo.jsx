@@ -44,7 +44,8 @@ const GeneralInfo = ({cards, accordion, progressBar, activeTitle}) => {
                                 const showDescription = index === activeIndex ? "collapse-content-active" : "";
                                 const changeIcon = index === activeIndex ? "plus-active" : "";
                                 return (
-                                <AccordionItem 
+                                <AccordionItem
+                                key={index} 
                                 title={card.title} 
                                 second 
                                 description={card.description} 
