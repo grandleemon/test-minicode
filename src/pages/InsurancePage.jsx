@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import InsuranceType from '../components/InsuranceTypes'
+import InsuranceTypesList from '../components/InsuranceTypesList'
 import GeneralInfo from './../components/GeneralInfo'
 import {getInsuranceTypes, getInfo} from './../api/index'
 
@@ -31,16 +31,7 @@ const InsurancePage = () => {
                 <h2 className="font-[800] font-['Raleway'] text-[28px] text-white">
                     Alege tipul de asigurare
                 </h2>
-                <div className="flex gap-x-[28px] mt-[18px] select-none">
-                    {insuranceTypes.length !== 0 
-                    ? insuranceTypes.map((type, i) => (
-                        <InsuranceType key={i} type={type} handleTab={handleTab} activeTab={activeTab} i={i}/>
-                    )) 
-                    : "loading error"}
-                    <span className="px-[20px] py-[9px] cursor-pointer text-white hover:underline text-[18px] font-[700] ">
-                        Altele <span className="ml-[5px]">&rarr;</span>
-                    </span>
-                </div>
+                <InsuranceTypesList insuranceTypes={insuranceTypes} handleTab={handleTab} activeTab={activeTab}/>
             </div>
 
             <h2 className="font-[800] font-['Raleway'] text-[28px] mt-[30px]">
