@@ -1,9 +1,9 @@
 import { useState } from 'react'
-
 import languageIcon from './../assets/language-icon.svg'
 import phoneIcon from './../assets/phone-icon.svg'
 import messengerIcon from './../assets/messenger-icon.svg'
 import whatsAppIcon from './../assets/whatsapp-icon.svg'
+import LeftSidebarItem from './LeftSidebarItem'
 
 const LeftSidebar = () => {
     const [chooseLang, setChooseLang] = useState("Rom")
@@ -34,31 +34,11 @@ const LeftSidebar = () => {
         </div>
 
         <hr className="w-[1px] h-[224px] border-[1px] border-[#E7E5E4]" />
-
-        <div className="group flex flex-col justify-center items-center cursor-pointer p-[25px]">
-            <img src={phoneIcon} alt="phone-icon" />
-            <div className="mt-[10px]">
-                <span className="group-hover:underline">Sună</span>
-            </div>
-        </div>
-
+        <LeftSidebarItem icon={phoneIcon}>Sună</LeftSidebarItem>
         <hr className="w-[1px] h-[224px] border-[1px] border-[#E7E5E4]" />
-
-        <div className="group flex flex-col justify-center items-center cursor-pointer p-[25px]">
-            <img src={messengerIcon} alt="messenger-icon" />
-            <div className="mt-[10px]">
-                <span className="group-hover:underline">Messenger</span>
-            </div>
-        </div>
-
+        <LeftSidebarItem icon={messengerIcon}>Messenger</LeftSidebarItem>
         <hr className="w-[70px] border-[1px] border-[#E7E5E4]" />
-
-        <div className="group flex flex-col justify-center items-center cursor-pointer p-[25px]">
-            <img src={whatsAppIcon} alt="messenger-icon" />
-            <div className="mt-[10px]">
-                <span className="group-hover:underline">WhatsApp</span>
-            </div>
-        </div>
+        <LeftSidebarItem icon={whatsAppIcon}>WhatsApp</LeftSidebarItem>
         
     </div>
   )

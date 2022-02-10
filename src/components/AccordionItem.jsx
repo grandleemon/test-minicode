@@ -1,10 +1,8 @@
-
 export const AccordionItem = ({title, second, setActiveIndex, showDescription, description, changeIcon}) => {
 
   return (
     <div>
-        <div 
-            className={`plus w-[100%] bg-white rounded-[7px] px-[20px] py-[11px] cursor-pointer flex justify-between items-center 
+        <div className={`plus w-[100%] bg-white rounded-[7px] px-[20px] py-[11px] cursor-pointer flex justify-between items-center 
             ${changeIcon} 
             ${second && "mt-[20px]"}`}
             onClick={setActiveIndex}>

@@ -1,0 +1,402 @@
+{
+  "insurance": {
+    "types": [
+      "Carte verde",
+      "RCA",
+      "Casco",
+      "Medicala",
+      "Accidente",
+      "Bunuri",
+      "Locuințe (imobile)"
+    ],
+    "main": 
+    [
+      {
+        "cards": [
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            },
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Echipament suplimentar"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului conform listei de dotări ale uzinei producătoare.Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere."
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Echipament suplimentar"
+            },
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului"
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Echipament suplimentar"
+            },
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuiorm listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului"
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+              "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+              "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Echipament suplimentar"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere."
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Echipament suplimentar"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuiAutovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului"
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde?"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+              "info": "Refrigeratoare, cisterne"
+            },
+            {
+              "info": "Tehnică specială"
+            },
+            {
+              "info": "Autobuz peste 20 locuri"
+            },
+            {
+              "info": "Remorci, semiremorci"
+            },
+            {
+              "info": "Echipament suplimentar"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuilistei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuilistei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuilistei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuilistei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului"
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      },
+      {
+        "cards": [
+            {
+                "info": "Autobuz peste 20 locuri"
+            },
+            {
+                "info": "Remorci, semiremorci"
+            },
+            {
+                "info": "Autoturism cu pînă la 9 locuri"
+            },
+            {
+                "info": "Camion pînă la 3,5 tone"
+            },
+            {
+                "info": "Camion mai mult de 3,5 tone"
+            },
+            {
+                "info": "Microbus pînă la 20 locuri"
+            },
+            {
+                "info": "Refrigeratoare, cisterne"
+            },
+            {
+                "info": "Tehnică specială"
+            },
+            {
+                "info": "Echipament suplimentar"
+            }
+        ],
+        "accordion": [
+            {
+                "title": "Obiectul asigurării",
+                "description": "Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice. Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.Autovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ululuiAutovehicule înmatriculate în Republica Moldova, care aparţin persoanelor fizice şi juridice.Echipamentul suplimentar, care nu intră în dotarea autovehiculului conform listei de dotări ale uzinei producătoare. Conducătorul auto şi pasagerii, pentru cazuri de accidente care pot avea loc în timpul accidentelor rutiere.ulului"
+            },
+            {
+                "title": "Riscuri și obligațiuni",
+                "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos? Libero illo tempora fugit molestiae a impedit!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quo officia repellendus est eos adipisci ad at necessitatibus unde? Atque id accusamus dignissimos?"
+            }
+        ],
+        "stepProgress": [
+            {
+                "value": 0
+            },
+            {
+                "value": 1
+            },
+            {
+                "value": 2
+            },
+            {
+                "value": 3
+            }
+        ]
+      }
+    ]
+  }
+}
+
