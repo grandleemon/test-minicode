@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import InsuranceType from '../components/InsuranceTypes'
 import GeneralInfo from './../components/GeneralInfo'
 
 const InsurancePage = () => {
-    const [activeTab, setActiveTab] = useState(0)
+    const [activeTab, setActiveTab] = useState(0);
+    const [activeTitleTab, setActiveTitleTab] = useState('Carte verde');
     
-    const handleTab = (arg) => {
-        setActiveTab(arg)
+    const handleTab = (i, type) => {
+        setActiveTab(i);
+        setActiveTitleTab(type);
     }
+
+    console.log(activeTitleTab)
     
     const typesOfInsurance = [
         'Carte verde',
@@ -463,7 +467,7 @@ const InsurancePage = () => {
                 </h2>
                 <div className="flex gap-x-[28px] mt-[18px] select-none">
                     {typesOfInsurance.map((type, i) => (
-                        <InsuranceType key={i} type={type} handleTab={handleTab} activeTab={activeTab} i={i} />
+                        <InsuranceType key={i} type={type} handleTab={handleTab} activeTab={activeTab} i={i}/>
                     ))}
                     <span className="px-[20px] py-[9px] cursor-pointer text-white hover:underline text-[18px] font-[700] ">Altele <span className="ml-[5px]">&rarr;</span></span>
                 </div>
@@ -474,7 +478,7 @@ const InsurancePage = () => {
             {generalInsuranceInfo.map((info, i) => {
                 return (
                     <div className={`${activeTab === i ? "active-block": "hidden-block"}`}>
-                        <GeneralInfo cards={info.cards} accordion={info.accordion} progressBar={info.stepProgress}/>
+                        <GeneralInfo activeTitle={activeTitleTab} cards={info.cards} accordion={info.accordion} progressBar={info.stepProgress}/>
                     </div>
                 )
             })}

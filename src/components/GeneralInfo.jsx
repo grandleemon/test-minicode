@@ -2,7 +2,7 @@ import { useState } from 'react'
 import car from './../assets/car.svg'
 import { AccordionItem } from '../components/Collapsible'
 
-const GeneralInfo = ({cards, accordion, progressBar}) => {
+const GeneralInfo = ({cards, accordion, progressBar, activeTitle}) => {
     const [activeCard, setActiveCard] = useState(null)
     const [activeIndex, setActiveIndex] = useState(0)
     let [currentActive, setCurrentActive] = useState(0) 
@@ -17,6 +17,11 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
         setCurrentActive(currentActive - 1)
     }
 
+    const setActiveCardInLocalStorage = (i, info) => {
+        setActiveCard(i)
+        localStorage.setItem(activeTitle, info)
+    }
+
   return (
     <div>
         <div>
@@ -25,7 +30,7 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
                     {cards?.map((card, i) => (
                         <div key={i} className={`card-item border-[1px] w-[200px] min-h-[125px] px-[20px] py-[13px] bg-white rounded-[7px] flex flex-col items-center justify-center 
                         text-center shadow-[0_5px_15px_2px_rgba(0,0,0,0.05)] hover:bg-[#a4073109] cursor-pointer ${activeCard === i ? "border-[#A40731] font-[700] card-item-active" : ""}`}
-                        onClick={() => setActiveCard(i)}>
+                        onClick={() => setActiveCardInLocalStorage(i, card.info)}>
                             <div className={`${activeCard === i ? "logo-item-active" : ""} mt-[17px]`}>
                                 <img src={car} alt="card-image" className="" />
                             </div>
@@ -65,12 +70,6 @@ const GeneralInfo = ({cards, accordion, progressBar}) => {
                 </div>
 
                 <div className="right-sidebar absolute right-0 top-[100px] border-l-[1px] w-[100px] flex flex-col items-center py-[40px] select-none">
-                    {/* <div className="w-[35px] h-[35px] border-[2px] border-[#00834B] rounded-full flex items-center justify-center">
-                        <div className="w-[11px] h-[11px] rounded-full bg-[#00834B]"></div>
-                    </div> */}
-                    
-                    {/* <hr className="h-[210px] border-[1px] border-[#00834B]"/> */}
-
                     {progressBar.map((circle, i) => {
                         return (
                             <div className="flex flex-col items-center">
